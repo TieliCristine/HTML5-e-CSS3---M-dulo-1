@@ -3,6 +3,8 @@ Prática de códigos realizados durante as aulas de HTML5 e CSS3 através do Cur
 
 Conhecimentos adquiridos com o curso:
 
+MÓDULO 1
+
 - Conceitos básicos
 - Preparação do ambiente
 - Semântica de HTML5
@@ -11,6 +13,8 @@ Conhecimentos adquiridos com o curso:
 - Ligações
 - Multimídias
 - Estilos
+
+MÓDULO 2
 
 Link para acessar o curso:
 https://www.cursoemvideo.com/curso/html5-css3-modulo1/
