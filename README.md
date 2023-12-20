@@ -16,5 +16,13 @@ MÓDULO 1
 
 MÓDULO 2
 
+- Psicologia das cores
+- Representação de cores com CSS
+- Harmonização de cores
+- Escolhendo paletas de cores
+- Ferramentas úteis
+- Tipografia
+- Família de Fontes
+
 Link para acessar o curso:
 https://www.cursoemvideo.com/curso/html5-css3-modulo1/
