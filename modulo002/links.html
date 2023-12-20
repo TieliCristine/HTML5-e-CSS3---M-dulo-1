@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #ff0026;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #79dc09;
+        }
+
+        /*a::after {*/
+        /*    content: ' [link]';*/
+        /*    text-decoration: none;*/
+        /*    font-weight: normal;*/
+        /*    color: darkgrey;*/
+        /*}*/
+
+        .especial {
+            background-color: #82bef6;
+        }
+
+        .especial::before {
+            content: '⇨ ';
+        }
+
+        .especial::after {
+            content: ' ⇦';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/TieliCristine/" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tieli-cristine-lehnen/" target="_blank">Perfil no LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal YouTube do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

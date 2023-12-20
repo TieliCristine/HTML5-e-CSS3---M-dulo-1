@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+    background-image: linear-gradient(to right, #e7c9f1, #a7f2f2);
 }
 
 main {
@@ -23,10 +23,27 @@ h1 {
     text-shadow: 1px 1px 2px rgba(129, 77, 5, 0.726);
 }
 
+h1#principal {
+    color: #5ba8ea;
+}
+
 h2 {
     color: #125189;
 }
 
 p {
     text-align: justify;
+}
+
+.basico {
+    color: #399605;
+    font-weight: bolder;
+}
+
+.intermediario {
+    color: #eaa705;
+}
+
+.avancado {
+    color: #9a3333;
 }
