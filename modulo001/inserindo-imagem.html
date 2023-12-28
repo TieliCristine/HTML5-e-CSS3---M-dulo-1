@@ -6,16 +6,43 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>Inserindo Imagens no Site</title>
 </head>
 <body>
-<h1>Inserindo imagens no site</h1>
-    <img src="../imagens/faetec-400.png" alt="Imagem logo FAETEC">
-    <img src="../imagens/paisagem-650.jpeg" alt="Imagem logo FAETEC">
-<h2>Também podemos colocar imagens externas</h2>
-    <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-3521515-2945018.png?f=webp&w=256">
-<br>
-<a href="../index.html" rel="prev">
-    <img src="../imagens/button-voltar-black.png" alt="ícone seta para voltar a página anterior"></a>
+<header>
+    <h1>O que aprendi?</h1>
+    <h2>Curso de HTML5 e CSS3</h2>
+    <nav>
+        <a href="../index.html" target="_self" rel="prev">Início</a>
+        <a href="../pag-modulos.html" target="_self" rel="next">Módulos</a>
+        <a href="../pag-desafios.html" target="_self" rel="next">Desafios</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Inserindo Imagens no Site</h3>
+            <h4>Imagem Interna</h4>
+            <p>Basta utilizar a tag "img" com os parâmetros "src" e "alt". No "src" deve ser colocado o caminho onde a imagem
+                se encontra dentro do próprio projeto, e em "alt" uma breve descrição da imagem para facilitar as ferramentas
+                de busca. </p>
+            <p>A sintaxe ficará como no exemplo abaixo:
+                <br><code>&lt;img src="../imagens/paisagem-650.jpeg" alt="Imagem de paisagem."&gt;</code></p>
+            <img src="../imagens/paisagem-650.jpeg" alt="Imagem logo FAETEC">
+            <h4>Imagens Externas</h4>
+            <p>Para inserir uma imagem externa, ou seja, uma imagem de outro site, utilizamos a mesma sintaxe
+                mencionada anteriormente, mas colocando o endereço de link da imagem, como no exemplo abaixo:
+            <br> <code>&lt;img
+                    src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-3521515-2945018.png?f=webp&w=256"
+                            alt="Logo JavaScript"&gt;</code></p>
+            <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-3521515-2945018.png?f=webp&w=256"
+                 alt="Logo JavaScript">
+            <p>Isso é tudo 🖖</p>
+        </article>
+    </section>
+</main>
 </body>
 </html>

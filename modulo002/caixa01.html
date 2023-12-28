@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>Modelo de Caixas</title>
     <style>
-        h1 {
+        h3 {
             background-color: lightsteelblue;
             height: 300px;
             width: 300px;
@@ -14,14 +15,31 @@
             margin: 20px auto auto 20px;
         }
 
-        a {
+        main > p > a {
             border: 3px solid #6D59C0;
         }
     </style>
 </head>
 <body>
-    <h1>Exemplo de caixa box-level</h1>
+<header>
+    <h1>O que aprendi?</h1>
+    <h2>Curso de HTML5 e CSS3</h2>
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="../pag-modulos.html" target="_self" rel="next">Módulos</a>
+        <a href="../pag-desafios.html" target="_self" rel="next">Desafios</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </nav>
+</header>
+<main>
+    <h3>Exemplo de caixa box-level</h3>
     <p>Parágrafos também são exemplos de box-level, mas <a href="#">links são exemplos de caixas inline-level</a>.
         Vamos ver como tudo isso funciona.</p>
+</main>
+
+<footer>
+    <p>Desenvolvido por <a href="#">Tieli Cristine Lehnen</a>.</p>
+</footer>
 </body>
 </html>

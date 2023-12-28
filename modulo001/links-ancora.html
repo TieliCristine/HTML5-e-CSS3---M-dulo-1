@@ -6,45 +6,107 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>Links e Âncoras</title>
 </head>
 <body>
-<h1>Links e Âncoras</h1>
-<h2>Links Externos</h2>
-<p>
-    Você pode acessar meu <a href="https://github.com/TieliCristine/"
-                             target="_blank"
-                             rel="external">repositório no GitHub.</a>
-</p>
-<p>Você também pode acessar o canal do
-    <a href="https://youtube.com/cursoemvideo/"
-       target="_blank"
-       rel="external">Curso em Vídeo no YouTube.</a></p>
-<h2>Links Internos</h2>
-<p>
-    Esta é a minha primeira página. Se você quiser, pode acessar também a minha
-    <a href="pag002.html"
-       rel="next">Segunda Página.</a>
-</p>
-<p>Esta página é um oferecimento de
-    <a href="https://www.hostnet.com.br"
-       target="_blank"
-       rel="nofollow">Hostnet</a></p>
-<p>Você também pode acessar nossa
-    <a href="noticias/pag003.html"
-       rel="next">página de notícias.</a></p>
-<h2>Links Para Downloads</h2>
-<ul>
-    <li><a href="arquivo/Keymap-IntelliJ-IDEA.pdf"
-           download="Keymap-IntelliJ-IDEA.pdf"
-           type="application/pdf">Baixar atalhos do IntelliJ em PDF</a></li>
+<header>
+    <h1>O que aprendi?</h1>
+    <h2>Curso de HTML5 e CSS3</h2>
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="../pag-modulos.html" target="_self" rel="next">Módulos</a>
+        <a href="../pag-desafios.html" target="_self" rel="next">Desafios</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Links e Âncoras</h3>
+            <h4>Links Externos</h4>
+            <p>
+                Você pode acessar meu <a href="https://github.com/TieliCristine/"
+                                         target="_blank"
+                                         rel="noopener">repositório no GitHub.</a>
+            </p>
+            <p>Você também pode acessar o canal do
+                <a href="https://youtube.com/cursoemvideo/"
+                   target="_blank"
+                   rel="external">Curso em Vídeo no YouTube.</a></p>
+            <p>Para inserir um link em uma palavra ou frase utilizamos a tag "a" com os parâmetros "href", "target"
+                e "rel". No exemplo acima, a sintaxe ficou assim:</p>
+            <pre><code>
+            &lt;p&gt;
+                Você pode acessar meu &lt;a href="https://github.com/TieliCristine/"
+                target="_blank"
+                rel="external">repositório no GitHub.&lt;/a&gt;
+            &lt;/p&gt;
+            </code></pre>
+            <p>O atributo "href" especifica o URL para o qual o link aponta. Este é o atributo fundamental que define o destino do link. O atributo
+                "target"
+                é utilizado para especificar onde abrir o link após o usuário clicar nele. Ele determina o contexto
+                de navegação para o link. O atributo "rel" (relationship) define o relacionamento entre o documento atual e o recurso vinculado. Ele é frequentemente usado em conjunto com links externos e pode conter valores que indicam o tipo de relação.</p>
+            <h4>Links Internos</h4>
+            <p>
+                Assim como nos links externos, utilizamos a mesma tag e parâmetros. A diferença é que em "href",
+                inserimos o caminho relativo à pasta onde o arquivo está localizado dentro do próprio projeto,
+                permitindo o acesso a páginas internas do site. Como exemplo, criei uma página chamada "Página
+                Exemplo". Para acessá-la, basta clicar em <strong>
+                <a href="pag002.html" rel="next">Página Exemplo.</a></strong>
+            </p>
+            <p>
+                Também criei outro exemplo com uma nova <strong>
+                <a href="pag003.html" rel="next">página de notícias.</a></strong>
+            </p>
+            <p>
+                Podemos configurar o link para que, ao ser ativado, abra a página em uma nova aba do navegador, permitindo que o usuário mantenha a página do site aberta ao acessar o link, como no exemplo abaixo:
+            </p>
+            <p>
+                Esta página é oferecida por<strong>
+                <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">Hostnet</a></strong>
+            </p>
 
-    <li><a href="arquivo/Keymap-IntelliJ-IDEA.7z"
-           download="Keymap-IntelliJ-IDEA.7z"
-           type="application/zip">Baixar atalhos do IntelliJ em ZIP</a></li>
-</ul>
-<br>
-<a href="../index.html" rel="prev">
-    <img src="../imagens/button-voltar-black.png" alt="ícone seta para voltar a página anterior"></a>
+            <h4>Links Para Downloads</h4>
+            <p>Para disponibilizar um link para download de um arquivo, também utilizamos a tag "a". Dessa vez com
+                os parâmetros "href" (inserimos o caminho relativo à pasta onde o arquivo está localizado dentro do
+                próprio projeto), "download" (contendo o nome exato do arquivo, exemplo "Keymap-IntelliJ-IDEA.pdf")
+                e "type" (aqui especificamos qual é a extensão do arquivo, exemplo "application/pdf"). </p>
+            <p>Não é
+                necessário decorar o que colocar em "type", basta pesquisar a extensão do arquivo no site <strong><a
+                        href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">Media
+                    Types</a></strong></p>
+            <p>Como exemplos, utilizei dois arquivos com extensões PDF e ZIP:</p>
+            <ul>
+                <li><a href="arquivo/Keymap-IntelliJ-IDEA.pdf"
+                       download="Keymap-IntelliJ-IDEA.pdf"
+                       type="application/pdf">Baixar atalhos do IntelliJ em PDF</a></li>
+
+                <li><a href="arquivo/Keymap-IntelliJ-IDEA.7z"
+                       download="Keymap-IntelliJ-IDEA.7z"
+                       type="application/zip">Baixar atalhos do IntelliJ em ZIP</a></li>
+            </ul>
+            <p>A sintaxe dos exemplos ficou:</p>
+            <pre>
+                <code>
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="arquivo/Keymap-IntelliJ-IDEA.pdf"
+                       download="Keymap-IntelliJ-IDEA.pdf"
+                       type="application/pdf"&gt;Baixar atalhos do IntelliJ em PDF&lt;/a>&lt;/li&gt;
+
+                &lt;li&gt;&lt;a href="arquivo/Keymap-IntelliJ-IDEA.7z"
+                       download="Keymap-IntelliJ-IDEA.7z"
+                       type="application/zip"&gt;Baixar atalhos do IntelliJ em ZIP&lt;/a>&lt;/li&gt;
+            &lt;/ul&gt;
+                </code>
+            </pre>
+            <p>Isso é tudo 🖖</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>Desenvolvido por <a href="#">Tieli Cristine Lehnen</a>.</p>
+</footer>
 </body>
 </html>

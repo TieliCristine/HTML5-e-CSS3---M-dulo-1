@@ -6,77 +6,96 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>Principais Formatações</title>
 </head>
 <body>
-<h1>Principais Formatações</h1>
-<h2>Semântica - Significados e Formas</h2>
-<h3>No HTML4 eram utilizadas tag de mudança de forma, que apenas alterava o estilo do
-    texto, exemplo (utilizando a tag "u"):</h3>
-<p>Eu moro na <u>Rua Almirante Lamego, 748.</u></p>
-<h3>No HTML5 não mudamos mais a forma/estilo dentro do HTML, deixamos isso para o CSS.
-    Focamos mais em dar significado ao conteúdo, exemplo (utilizando a tag "address"):</h3>
-<p>Eu moro na
-<address>Rua Almirante Lamego, 748.</address>
-</p>
-<h2>O mesmo podemos dizer sobre o negrito/destaque e itálico</h2>
-<h3>No HTML4, utilizávamos a tag "b":</h3>
-<p>Eu amo <b>estudar</b> programação.</p>
-<h3>No HTML5, utilizamos a tag "strong":</h3>
-<p>Eu amo <strong>estudar</strong> programação.</p>
-<h3>Sobre o itálico, no HTML4 era com a tag "i":</h3>
-<p>Eu faço os cursos do <i>Curso em Video.</i></p>
-<h3>No HTML5 utilizamos a tag "em":</h3>
-<p>Eu faço os cursos do <em>Curso em Video.</em></p>
-<h2>Marca Texto</h2>
-<p>Nesta frase irei marcar a palavra
-    <mark>HTML</mark>
-    com a tag "mark"
-</p>
-<p>Nesta frase quero marcar a palavra de outra cor lime
-    <mark style="background-color: lime">HTML</mark>
-    usando style dentro da tag "mark"
-</p>
-<h3>Outros estilos de marcações comuns:</h3>
-<p>Quando quero indicar que um texto deve ser lido mas
-    <del>não deve ser considerado</del>
-    utilizo a tag "del".
-    Isso acontece muito nos textos de Leis (STF).
-</p>
-<p>Quando quero indicar que um texto foi
-    <ins>inserido eu marco com a tag "ins"</ins>
-    que irá sublinhar o texto, dando sentido ao
-    texto, ou seja, semântico.
-</p>
-<p>O sublinhado com a tag "u" é diferente do sublinhado da tag "ins".
-    <u>Ainda não está depreciado, mas</u>
-    ele continua sendo uma forma de estilização sem um propósito definido, ou seja, não semântico.</p>
-<p>Para expressar de forma matemática quando um número é uma potência, como exemplo x<sup>20</sup>+5, utilizamos a tag
-    "sup" de sobrescrito.</p>
-<p>Da mesma forma, quando quero que o número apareça em posição inferior como H<sub>2</sub>O, utilizamos a tag "sub" de
-    subscrito.</p>
-<p>Para quebrar a linha aqui <br> uso a tag &lt;br&gt;.</p>
-<p>
-    Símbolos especiais:
-    &reg; (marca registrada)
-    &copy;
-    &trade; (marca registrada em inglês)
-    &euro;
-    &pound;
-</p>
-<p>
-    Adicionando emoji: <br>
-    &#x1F596;
-    &#x1F384;
-</p>
-<h2>Interessante Saber Mas Dificilmente Usado</h2>
-<h3>Texto Invertido</h3>
-<p>com a tag "bdo" e parâmetro "dir="rtl" (right to left) podemos inverter um texto:</p>
-<p><bdo dir="rtl">Eu estou aprendendo a inverter um texto.</bdo></p>
-<p>Mesmo texto mas com parâmetro "ltr" (left to right):</p>
-<p><bdo dir="ltr">Eu estou aprendendo a inverter um texto.</bdo></p>
-<br>
-<a href="../index.html" rel="prev">
-    <img src="../imagens/button-voltar-black.png" alt="ícone seta para voltar a página anterior"></a>
+<header>
+    <h1>O que aprendi?</h1>
+    <h2>Curso de HTML5 e CSS3</h2>
+    <nav>
+        <a href="../index.html" target="_self" rel="prev">Início</a>
+        <a href="../pag-modulos.html" target="_self" rel="next">Módulos</a>
+        <a href="../pag-desafios.html" target="_self" rel="next">Desafios</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Principais Formatações</h3>
+            <h4>Semântica - Significados e Formas</h4>
+            <hp>No HTML4 eram utilizadas tag de mudança de forma, que apenas alterava o estilo do
+                texto, exemplo (utilizando a tag "u"):</hp>
+            <p>Eu moro na <u>Rua Almirante Lamego, 748.</u></p>
+            <hp>No HTML5 não mudamos mais a forma/estilo dentro do HTML, deixamos isso para o CSS.
+                Focamos mais em dar significado ao conteúdo, exemplo (utilizando a tag "address"):</hp>
+            <p>Eu moro na <address>Rua Almirante Lamego, 748.</address>
+            </p>
+            <h4>Negrito/Destaque e Itálico</h4>
+            <p>No HTML4, utilizávamos a tag "b":</p>
+            <p>Eu amo <b>estudar</b> programação.</p>
+            <p>No HTML5, utilizamos a tag "strong":</p>
+            <p>Eu amo <strong>estudar</strong> programação.</p>
+            <p>Sobre o itálico, no HTML4 era com a tag "i":</p>
+            <p>Eu faço os cursos do <i>Curso em Video.</i></p>
+            <p>No HTML5 utilizamos a tag "em":</p>
+            <p>Eu faço os cursos do <em>Curso em Video.</em></p>
+            <h4>Marca Texto</h4>
+            <p>Nesta frase irei marcar a palavra
+                <mark>HTML</mark>
+                com a tag "mark"
+            </p>
+            <p>Nesta frase quero marcar a palavra de outra cor lime
+                <mark style="background-color: lime">HTML</mark>
+                usando style dentro da tag "mark"
+            </p>
+            <h4>Outros estilos de marcações comuns:</h4>
+            <p>Quando quero indicar que um texto deve ser lido mas
+                <del>não deve ser considerado</del>
+                utilizo a tag "del".
+                Isso acontece muito nos textos de Leis (STF).
+            </p>
+            <p>Quando quero indicar que um texto foi
+                <ins>inserido eu marco com a tag "ins"</ins>
+                que irá sublinhar o texto, dando sentido ao
+                texto, ou seja, semântico.
+            </p>
+            <p>O sublinhado com a tag "u" é diferente do sublinhado da tag "ins".
+                <u>Ainda não está depreciado, mas</u>
+                ele continua sendo uma forma de estilização sem um propósito definido, ou seja, não semântico.</p>
+            <p>Para expressar de forma matemática quando um número é uma potência, como exemplo x<sup>20</sup>+5, utilizamos a tag
+                "sup" de sobrescrito.</p>
+            <p>Da mesma forma, quando quero que o número apareça em posição inferior como H<sub>2</sub>O, utilizamos a tag "sub" de
+                subscrito.</p>
+            <p>Para quebrar a linha aqui <br> uso a tag &lt;br&gt;.</p>
+            <p><pre>
+                Símbolos especiais:
+                &reg; (marca registrada)
+                &copy;
+                &trade; (marca registrada em inglês)
+                &euro;
+                &pound;
+            </pre></p>
+            <p>
+                Adicionando emoji: <br>
+                &#x1F596;
+                &#x1F384;
+            </p>
+            <h3>Interessante Saber, Mas Dificilmente Usado:</h3>
+            <h4>Texto Invertido</h4>
+            <p>com a tag "bdo" e parâmetro "dir="rtl" (right to left) podemos inverter um texto:</p>
+            <p><bdo dir="rtl">Eu estou aprendendo a inverter um texto.</bdo></p>
+            <p>Mesmo texto mas com parâmetro "ltr" (left to right):</p>
+            <p><bdo dir="ltr">Eu estou aprendendo a inverter um texto.</bdo></p>
+            <p>Isso é tudo 🖖</p>
+        </article>
+    </section>
+
+</main>
+<footer>
+    <p>Desenvolvido por <a href="#">Tieli Cristine Lehnen</a>.</p>
+</footer>
 </body>
 </html>

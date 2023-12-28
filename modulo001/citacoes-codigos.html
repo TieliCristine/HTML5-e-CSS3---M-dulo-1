@@ -6,69 +6,99 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>Citações e Códigos</title>
 </head>
 <body>
-<h1>Citações e Códigos</h1>
-<h2>Códigos</h2>
-<p>O comando document.getElementById('teste') é escrito em linguagem JavaScript. Para melhor leitura do código,
-    utilizamos
-    a tag "code": <code>document.getElementById('teste')</code> isso faz um leve espaçamento entre as letras e símbolos.
-</p>
-<p>Para demonstrar um trecho de código em Python (ou outra linguagem), não basta apenas usar a tag "code", pois ficaria
-    assim:</p>
-<p><code>
-    num = int(input('Digite um número'))
-    if num % 2 == 0:
-    print(f'O número {num} é PAR')
-    else:
-    print(f'O número {num} é ÍMPAR')
-    print('Fim do programa.')
-</code></p>
-<p>Para que a endentação seja considerada na apresentação do texto, precisamos envelopar a tag "code" com todo seu
-    conteúdo, então ficará assim:</p>
-<pre>
-    <code>
-        num = int(input('Digite um número'))
-        if num % 2 == 0:
-            print(f'O número {num} é PAR')
-        else:
-            print(f'O número {num} é ÍMPAR')
-        print('Fim do programa.')
-    </code>
-</pre>
-<p>Removendo o espaço o texto fica colado na esquerda:</p>
-<pre>
-    <code>
+<header>
+    <h1>O que aprendi?</h1>
+    <h2>Curso de HTML5 e CSS3</h2>
+    <nav>
+        <a href="../index.html" target="_self" rel="prev">Início</a>
+        <a href="../pag-modulos.html" target="_self" rel="next">Módulos</a>
+        <a href="../pag-desafios.html" target="_self" rel="next">Desafios</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Citações e Códigos</h3>
+            <h4>Códigos</h4>
+            <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript. Para melhor leitura do
+                código,
+                utilizamos
+                a tag "code": <code>document.getElementById('teste')</code> isso faz um leve espaçamento entre as letras
+                e símbolos.
+            </p>
+            <p>Para demonstrar um trecho de código em Python (ou outra linguagem), não basta apenas usar a tag "code",
+                pois ficaria
+                assim:</p>
+            <p><code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                print(f'O número {num} é PAR')
+                else:
+                print(f'O número {num} é ÍMPAR')
+                print('Fim do programa.')
+            </code></p>
+            <p>Para que a endentação seja considerada na apresentação do texto, precisamos envelopar a tag "code" com
+                todo seu
+                conteúdo, então ficará assim:</p>
+            <pre>
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print(f'O número {num} é PAR')
+                else:
+                    print(f'O número {num} é ÍMPAR')
+                print('Fim do programa.')
+            </code>
+            </pre>
+            <p>Removendo o espaço o texto fica colado na esquerda:</p>
+            <pre>
+            <code>
 num = int(input('Digite um número'))
 if num % 2 == 0:
     print(f'O número {num} é PAR')
 else:
     print(f'O número {num} é ÍMPAR')
 print('Fim do programa.')
-    </code>
-</pre>
-<h2>Citações</h2>
-<p>Para indicar que um texto é uma citação, utilizamos a tag "q":</p>
-<p>Como diria o pai de um amigo: <q>o computador é um burro rápido</q>.</p>
-<p>Também podemos colocar uma citação maior, inclusive com o recuo:</p>
-<p>Citado por James O. Coplien no livro Clean Code:</p>
-<blockquote
-        title="https://www.google.com.br/books/edition/Clean_Code/_i6bDeoCQzsC?hl=pt-BR&gbpv=1&dq=clean+code&printsec=frontcover">
-    <q>In our profession, we desperately need all the help we can get. If a clean shop floor reduces accidents, and
-        well-organized shop tools increase productivity, then I'm all for them. As for this book, it is the best
-        pragmatic
-        application of Lean principles to software I have ever seen in print. I expected no less from this practical
-        little
-        group of thinking individuals tha has been striving together for years not only to become better, but also to
-        gift
-        their knowledge to the industry in works such as you now find in your hands. It leaves the world life better
-        than I
-        found it before Uncle Bob sent me the manuscript.
-        Having completed this exercise in lofty insights, I am off to clean my desk.</q>
-</blockquote>
-<br>
-<a href="../index.html" rel="prev">
-    <img src="../imagens/button-voltar-black.png" alt="ícone seta para voltar a página anterior"></a>
+            </code>
+            </pre>
+        </article>
+        <article>
+            <h4>Citações</h4>
+            <p>Para indicar que um texto é uma citação, utilizamos a tag "q":</p>
+            <p>Como diria o pai de um amigo: <q>o computador é um burro rápido</q>.</p>
+            <p>Também podemos colocar uma citação maior, inclusive com o recuo:</p>
+            <p>Citado por James O. Coplien no livro Clean Code:</p>
+            <blockquote
+                    title="https://www.google.com.br/books/edition/Clean_Code/_i6bDeoCQzsC?hl=pt-BR&gbpv=1&dq=clean+code&printsec=frontcover">
+                <q>In our profession, we desperately need all the help we can get. If a clean shop floor reduces
+                    accidents, and
+                    well-organized shop tools increase productivity, then I'm all for them. As for this book, it is the
+                    best
+                    pragmatic
+                    application of Lean principles to software I have ever seen in print. I expected no less from this
+                    practical
+                    little
+                    group of thinking individuals tha has been striving together for years not only to become better,
+                    but also to
+                    gift
+                    their knowledge to the industry in works such as you now find in your hands. It leaves the world
+                    life better
+                    than I
+                    found it before Uncle Bob sent me the manuscript.
+                    Having completed this exercise in lofty insights, I am off to clean my desk.</q>
+            </blockquote>
+        </article>
+        <p>Isso é tudo 🖖</p>
+    </section>
+</main>
+<footer>
+    <p>Desenvolvido por <a href="#">Tieli Cristine Lehnen</a>.</p>
+</footer>
 </body>
 </html>

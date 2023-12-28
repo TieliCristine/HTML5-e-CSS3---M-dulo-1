@@ -6,65 +6,106 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../imagens/icon-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>Mídias em HTML5</title>
 </head>
 <body>
-    <h1>Subindo Mídias</h1>
-    <h2>Imagem Dinâmica</h2>
-    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
-    <picture>
-        <source media="(max-width: 750px)" srcset="../imagens/img-p.png">
-        <source media="(max-width: 1050px)" srcset="../imagens/img-m.png" type="image/png">
-        <img src="../imagens/img-g.png" alt="Imagens Flexíveis">
-    </picture>
-    <h2>Reproduzindo Áudio</h2>
-    <audio src="audio/Fine-Dining-TrackTribe.mp3" controls></audio>
-    <!-- Formatos de áudio aceitos: MP3, WAV, OGG -->
-    <h2>Reproduzindo Vídeo</h2>
-    <p>Este vídeo está hospedado no meu próprio servidor.</p>
-<!--    <video src="../video/fire-video3.webm" width="450" controls></video>-->
-    <video width="560" poster="../imagens/capa-video-fire.jpg" controls loop>
-        <source src="video/fire-video3.webm" type="video/webm">
-        <source src="video/fire-video2.mp4" type="video/mp4">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
-    </video>
-    <h2>Inserindo vídeos do YouTube</h2>
-    <h3>Vantagens:</h3>
-    <ul>
-        <li>É gratis, o que é ótimo rsrs</li>
-        <li>Não consome banda do site pois é reproduzido de outro site</li>
-        <li>Podemos subir vídeos gratuitamente</li>
-    </ul>
-    <h3>Desvantagens:</h3>
-    <ul>
-        <li>Todos podem acessar o vídeo. No caso de produção de vídeo próprio não é muito legal, um exemplo é
-        cursos online onde o vídeo só pode ser visto para quem é assinante.</li>
-        <li>Não consome banda do site pois é reproduzido de outro site</li>
-        <li>Aparece ao final do vídeo uma lista para ver outros vídeos</li>
-    </ul>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=C7cUovRPODve4XcP"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    <h2>Inserindo vídeos do Vimeo</h2>
-    <h3>Vantagens:</h3>
-    <ul>
-        <li>Tem vídeos gratis, o que é ótimo também rsrs</li>
-        <li>Não consome banda do site pois é reproduzido de outro site</li>
-        <li>Vídeos de melhor qualidade</li>
-        <li>Não aparece no final do vídeo uma lista de sugestão para assistir outros vídeos</li>
-        <li></li>
-    </ul>
-    <h3>Desvantagens:</h3>
-    <ul>
-        <li>Par subir vídeos precisa ter uma assinatura</li>
-        <li>Há um limite de upload de vídeos</li>
-        <li>Uma assinatura é cara</li>
-    </ul>
-    <iframe src="https://player.vimeo.com/video/74655666?h=0517d145a0&portrait=0" width="560" height="420"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<br>
-    <a href="../index.html" rel="prev">
-        <img src="../imagens/button-voltar-black.png" alt="ícone seta para voltar a página anterior"></a>
+<header>
+    <h1>O que aprendi?</h1>
+    <h2>Curso de HTML5 e CSS3</h2>
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="../pag-modulos.html" target="_self" rel="next">Módulos</a>
+        <a href="../pag-desafios.html" target="_self" rel="next">Desafios</a>
+        <a href="#">Teste</a>
+        <a href="#">Teste</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <article>
+            <h3>Subindo Mídias</h3>
+            <h4>Imagem Dinâmica</h4>
+            <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do
+                seu navegador. Perceba que a imagem mudará de tamanho conforme a tela aumenta ou diminui de tamanho.</p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="../imagens/img-p.png">
+                <source media="(max-width: 1050px)" srcset="../imagens/img-m.png" type="image/png">
+                <img src="../imagens/img-g.png" alt="Imagens Flexíveis">
+            </picture>
+            <p>
+                Essas configurações de imagens fazemos da seguinte forma:
+            </p>
+            <pre><code>
+&lt;picture&gt;
+    &lt;source media="(max-width: 750px)" srcset="../imagens/img-p.png"&gt;
+    &lt;source media="(max-width: 1050px)" srcset="../imagens/img-m.png" type="image/png"&gt;
+    &lt;img src="../imagens/img-g.png" alt="Imagens Flexíveis"&gt;
+&lt;/picture&gt;
+            </code></pre>
+            <h3>Inserindo Áudio</h3>
+            <p>Para inserir um arquivo de áudio para ser reproduzido dentro do site ou para efetuar download,
+                utilizamos a
+                sintaxe
+                abaixo:</p>
+            <pre><code>
+&lt;audio src="audio/Fine-Dining-TrackTribe.mp3" controls&gt;&lt;/audio&gt;
+            </code></pre>
+            <p>Resultado:</p>
+            <audio src="audio/Fine-Dining-TrackTribe.mp3" controls></audio>
+            <!-- Formatos de áudio aceitos: MP3, WAV, OGG -->
+            <h3>Inserindo Vídeo</h3>
+            <p>Este vídeo está hospedado no meu próprio servidor.</p>
+            <!--    <video src="../video/fire-video3.webm" width="450" controls></video>-->
+            <video width="560" poster="../imagens/capa-video-fire.jpg" controls loop>
+                <source src="video/fire-video3.webm" type="video/webm">
+                <source src="video/fire-video2.mp4" type="video/mp4">
+                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+            </video>
+            <h3>Inserindo vídeos do YouTube</h3>
+            <h4>Vantagens:</h4>
+            <ul>
+                <li>É gratis, o que é ótimo rsrs</li>
+                <li>Não consome banda do site pois é reproduzido de outro site</li>
+                <li>Podemos subir vídeos gratuitamente</li>
+            </ul>
+            <h4>Desvantagens:</h4>
+            <ul>
+                <li>Todos podem acessar o vídeo. No caso de produção de vídeo próprio não é muito legal, um exemplo é
+                    cursos online onde o vídeo só pode ser visto para quem é assinante.
+                </li>
+                <li>Não consome banda do site pois é reproduzido de outro site</li>
+                <li>Aparece ao final do vídeo uma lista para ver outros vídeos</li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=C7cUovRPODve4XcP"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <h3>Inserindo vídeos do Vimeo</h3>
+            <h4>Vantagens:</h4>
+            <ul>
+                <li>Tem vídeos gratis, o que é ótimo também rsrs</li>
+                <li>Não consome banda do site pois é reproduzido de outro site</li>
+                <li>Vídeos de melhor qualidade</li>
+                <li>Não aparece no final do vídeo uma lista de sugestão para assistir outros vídeos</li>
+                <li></li>
+            </ul>
+            <h4>Desvantagens:</h4>
+            <ul>
+                <li>Par subir vídeos precisa ter uma assinatura</li>
+                <li>Há um limite de upload de vídeos</li>
+                <li>Uma assinatura é cara</li>
+            </ul>
+            <iframe src="https://player.vimeo.com/video/74655666?h=0517d145a0&portrait=0" width="560" height="420"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>Isso é tudo 🖖</p>
+        </article>
+    </section>
+
+</main>
+<footer>
+    <p>Desenvolvido por <a href="#">Tieli Cristine Lehnen</a>.</p>
+</footer>
 </body>
 </html>
