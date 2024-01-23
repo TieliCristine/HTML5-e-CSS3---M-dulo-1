@@ -9,23 +9,36 @@
     <title>Desafio 1 - M2</title>
     <style>
         @font-face {
-            font-family: 'Idroid';
-            src: url('fontes/idroid.otf') format('opentype'), url('fontes/IDroid Bold.otf') format('opentype'),
-            url('fontes/IDroid Bold Italic.otf') format('opentype'), url('fontes/IDroid Italic.otf') format('opentype');
+            font-family: 'Dodica';
+            src: url('fontes/dogica.otf') format('opentype'), url('fontes/dogicabold.otf') format('opentype'),
+            url('fontes/dogicapixel.otf') format('opentype'), url('fontes/dogicapixelbold.otf') format('opentype'),
+        url('fontes/dogica.ttf');
         }
 
         header {
-            background-image: linear-gradient(to top, rgb(4, 56, 107), #6fb5ef);
+            background-color: black;
             color: white;
-            padding: 20px 10px 10px 10px;
             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.29);
+            max-height: 300px;
         }
 
-        header > h1, p {
-            text-align: center;
+        #bunner-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #nav {
+            background-color: #e91e63;
+            height: 30px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         nav > a {
+
             text-decoration: none;
             color: white;
             margin-right: 30px;
@@ -48,8 +61,12 @@
             padding: 15px;
         }
 
+        article img {
+            border: red 1px solid;
+        }
+
         #extra {
-            background-color: rgba(118, 161, 199, 0.27);
+            background-color: rgba(254, 215, 228, 0.56);
             margin: 15px;
             box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.14);
             border-radius: 10px;
@@ -57,12 +74,17 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #aed5f8;
+            background-color: #fed7e4;
             margin: 0;
         }
 
         h1 {
-            margin: 0;
+            font-family: Dodica, Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            color: #18e8d7;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         h2, h3 {
@@ -70,11 +92,12 @@
             font-style: normal;
             font-weight: bolder;
             margin: 0;
-            color: #03457e;
+            color: #9b0235;
         }
 
         h3 {
-            background-image: linear-gradient( to right, rgba(141, 194, 246, 0.35), rgba(184, 215, 241, 0.17));
+            background-image: linear-gradient(to right, rgb(248, 215, 226), rgba(252, 83, 140, 0.05));
+            padding: 5px;
         }
 
         h4 {
@@ -89,14 +112,19 @@
         }
 
         #video {
-            background-color: #125189;
-
+            background-color: rgba(0, 0, 0, 0.87);
+            display: flex;
+            justify-content: center;
         }
 
         footer {
-            background-color: #125189;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.87);
+            color: #fc538c;
+            height: 70px;
             padding: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         footer > p {
@@ -106,14 +134,22 @@
 </head>
 <body>
 <header>
-    <h1>CURIOSIDADES DE TECNOLOGIA</h1>
-    <p>Tudo que você sempre quis saber sobre o mundo Tech, em um só lugar.</p>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Curiosidades</a>
-        <a href="#">Fale Conosco</a>
-    </nav>
+    <!--    <h1>CURIOSIDADES DE TECNOLOGIA</h1>-->
+    <div id="bunner-header">
+        <img src="../../imagens/thc-260x260-transparente.png" alt="logo">
+        <div>
+            <h1>Tudo que você precisa saber sobre </h1>
+            <h1>o mundo Tech, em um só lugar.</h1>
+        </div>
+    </div>
+    <div id="nav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </div>
 </header>
 <main>
     <section>
@@ -155,9 +191,11 @@
                 escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo,
                 objetivo.
             </p>
-            <p>[VIDEO]</p>
             <div id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=nzB7aPUegbm9D8Yp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=nzB7aPUegbm9D8Yp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
         </article>
         <article id="extra">
@@ -189,13 +227,14 @@
                 trouxe para o sistema Android.
             </p>
         </article>
-    <p>
-        Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.
-    </p>
+        <p>
+            Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e
+            seu simpático mascote.
+        </p>
     </section>
 </main>
 <footer>
-    <p>Site criado por Gustavo Guanabara para o CursoemVideo.</p>
+    <p>Site criado por Tieli Cristine como desafio do curso HTML5 e CSS3 do Curso em Video.</p>
 </footer>
 </body>
 </html>
